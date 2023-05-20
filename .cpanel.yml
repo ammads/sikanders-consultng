@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/${{ secrets.CPANEL_USER }}/public_html/sikandersconsulting.com
+    - /bin/cp -R * $DEPLOYPATH
